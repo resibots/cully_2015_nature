@@ -18,11 +18,12 @@ cd robdyn
 ./waf install
 
 cd ../limbo
-./waf configure
-./waf --exp ITE --robdyn=../install
+./waf configure --robdyn=../install
+./waf --exp ITE
 
 cd ../sferes2
-./waf configure --cpp11=yes --robdyn=../install
+./waf configure --cpp11=yes --robdyn=../robdyn
+./waf
 ./waf --exp map_elites_hexapod
 
 cd ..
