@@ -13,16 +13,20 @@ cd ../../
 echo "robdyn \n" >> sferes2/modules.conf
 
 cd robdyn
-./waf configure --prefix=../install
+
+INSTALL="$(realpath ../install)"
+echo "Install directory: ${INSTALL}"
+
+./waf configure --prefix=$INSTALL
 ./waf
 ./waf install
 
 cd ../limbo
-./waf configure --robdyn=../install
+./waf configure --robdyn=$INSTALL
 ./waf --exp ITE
 
 cd ../sferes2
-./waf configure --cpp11=yes --robdyn=../install
+./waf configure --cpp11=yes --robdyn=$INSTALL
 ./waf
 ./waf --exp map_elites_hexapod
 
