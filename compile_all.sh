@@ -1,9 +1,14 @@
 #!/bin/bash
 mkdir -p limbo/exp
 mkdir install
-ln -s ITE limbo/exp/ITE
-ln -s robdyn/sferes/robdyn sferes2/modules/robdyn
-ln -s map_elites_hexapod sferes2/exp/map_elites_hexapod
+cd limbo/exp
+ln -s ../../ITE
+cd ../../sferes2/modules
+ln -s robdyn/sferes/robdyn
+cd ../exp
+ln -s ../../../../map_elites_hexapod
+
+cd ../../../../
 
 echo "robdyn \n" >> sferes2/modules.conf
 
