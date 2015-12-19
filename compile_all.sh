@@ -22,7 +22,7 @@ cd ../limbo
 ./waf --exp ITE
 
 cd ../sferes2
-./waf configure --cpp11=yes --robdyn=../robdyn
+./waf configure --cpp11=yes --robdyn=../install
 ./waf
 ./waf --exp map_elites_hexapod
 
