@@ -1,0 +1,15 @@
+[submodule "limbo"]
+	path = limbo
+	url = https://github.com/resibots/limbo.git
+[submodule "ITE"]
+	path = ITE
+	url = https://github.com/resibots/ITE.git
+[submodule "robdyn"]
+	path = robdyn
+	url = https://github.com/resibots/robdyn.git
+[submodule "map_elites_hexapod"]
+	path = map_elites_hexapod
+	url = https://github.com/resibots/map_elites_hexapod.git
+[submodule "sferes2"]
+	path = sferes2
+	url = https://github.com/sferes2/sferes2.git
