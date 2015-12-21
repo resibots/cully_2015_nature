@@ -20,6 +20,15 @@ Video (click on it to play):
 git clone --recursive https://github.com/resibots/cully_2015_nature.git
 ```
 
+#### Dependencies
+
+- [ODE]: Dynamics Engine
+    - Make sure you have installed `ODE` by sources and using this [trick](https://github.com/resibots/robdyn/issues/3#issuecomment-148740769).
+    - If you do not want to generate new MAP Elites archives, you can install `ODE` from [binaries](https://launchpad.net/ubuntu/+source/ode).
+- [Boost]: C++ Template Libraries
+- [Eigen]: Linear Algebra C++ Library
+- [realpath]: `sudo apt-get install realpath`
+
 #### How to easily compile everything
 
 **Important:** Make sure you have installed all the dependencies of each repo. Otherwise the build will fail.
@@ -29,16 +38,6 @@ From the root of this repo run:
 ```
 sh compile_all.sh
 ```
-
-#### How to run the ITE experiments
-
-From the root of this repo run:
-
-```
-./limbo/build/exp/ITE/hexa_bomean_variant limbo/exp/ITE/archives/archive_file.dat
-```
-
-See [ITE](https://github.com/resibots/ITE) for more details.
 
 #### How to generate MAP-Elites archives
 
@@ -51,6 +50,16 @@ From the root of this repo run:
 Typical runs take 10-15 days.
 
 See [map_elites_hexapod](https://github.com/resibots/map_elites_hexapod) for more details.
+
+#### How to run the ITE experiments
+
+From the root of this repo run:
+
+```
+./limbo/build/exp/ITE/hexa_bomean_variant limbo/exp/ITE/archives/archive_file.dat
+```
+
+See [ITE](https://github.com/resibots/ITE) for more details.
 
 #### How to easily clean everything
 
@@ -66,3 +75,7 @@ sh clear_all.sh
 [CeCILL]
 
 [CeCILL]: http://www.cecill.info/index.en.html
+[ODE]: http://ode.org/
+[Boost]: http://www.boost.org
+[Eigen]: http://eigen.tuxfamily.org/
+[realpath]: http://manpages.ubuntu.com/manpages/jaunty/man1/realpath.1.html
