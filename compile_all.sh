@@ -22,8 +22,8 @@ echo "Install directory: ${INSTALL}"
 ./waf install
 
 cd ../limbo
-./waf configure --robdyn=$INSTALL
-./waf --exp ITE
+./waf configure
+./waf --exp ITE --robdyn=$INSTALL
 
 cd ../sferes2
 ./waf configure --cpp11=yes --robdyn=$INSTALL
