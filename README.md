@@ -1,5 +1,8 @@
 # Robots that can adapt like animals
 
+**WARNING** This repository is for archival-purpose only. A more up-to-date implementation of IT&E as described in Cully et al., 2015 is available here: https://github.com/resibots/ite_v2
+
+
 #### meta-repo for code for the experiments published in Cully et al. (2015), Nature.
 
 Full reference:
